@@ -1,0 +1,25 @@
+<section>
+    <h2>Mis proyectos</h2>
+
+    @if(proyectos().length>0){
+     <div class="grid">
+        @for(p of proyectos(); track p.id){
+            <article class="card">
+                <div class="card-body">
+                    <h3>{{p.nombre}}</h3>
+                    <p>{{p.descripcionCorta}}</p>
+                    <ul class="tags">
+                        @for(t of p.tecnologias; track t){
+                            <li>{{t}}</li>
+                        }
+                    </ul>
+                    <a [routerLink]="['/proyectos', p.id]">Ver detalles</a>
+
+                </div>
+            </article>
+        }
+     </div>   
+    }@else{
+        <p>Cargando proyectos</p>
+    }
+</section>

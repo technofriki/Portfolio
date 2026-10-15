@@ -1,0 +1,48 @@
+
+{
+  "proyectos": [
+    {
+      "id": "1",
+      "nombre": "Veterinaria",
+      "descripcionCorta": "Sistema web para la gestión integral de una veterinaria.",
+      "descripcion": "Aplicación web desarrollada para gestionar clientes, mascotas, usuarios, turnos, consultas y recetas de una veterinaria. Cuenta con autenticación y autorización mediante roles para controlar el acceso a las diferentes funcionalidades del sistema.",
+      "tecnologias": [
+        "Java",
+        "Spring Boot",
+        "Spring Security",
+        "JWT",
+        "MySQL",
+        "API REST"
+      ],
+      "imagen": "/images/veterinary.jpg"
+    },
+    {
+      "id": "2",
+      "nombre": "LibroVerso",
+      "descripcionCorta": "Aplicación web para administrar una biblioteca de libros.",
+      "descripcion": "Aplicación frontend desarrollada en Angular que permite consultar, agregar, modificar y eliminar libros. Los datos son gestionados mediante una API REST simulada utilizando json-server.",
+      "tecnologias": [
+        "Angular",
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "json-server"
+      ],
+      "imagen": "/images/bookverse.jpg"
+    },
+    {
+      "id": "3",
+      "nombre": "Portafolio personal",
+      "descripcionCorta": "Portafolio web profesional para presentar proyectos y servicios.",
+      "descripcion": "Portafolio personal desarrollado con Angular para mostrar información profesional, formación académica, tecnologías conocidas y proyectos realizados. También permite recibir y gestionar solicitudes de potenciales clientes.",
+      "tecnologias": [
+        "Angular",
+        "TypeScript",
+        "HTML",
+        "CSS",
+        "json-server"
+      ],
+      "imagen": "/images/portfolio.jpg"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+@if (error()){
+    <p>{{error()}}</p>
+}@else if(proyectoDetalle(); as p){
+    <img [src]="p.imagen" [alt]="p.nombre">
+    <h2>{{p.nombre}}</h2>
+    <p>{{p.descripcionCorta}}</p>
+    <p>{{p.descripcion}}</p>
+    <ul class="tags">
+        @for(t of p.tecnologias; track t){
+            <li>{{t}}</li>
+        }
+    </ul>
+    <a routerLink="/proyectos">Volver a la lista</a>
+}@else{
+    <p>Cargando proyecto</p>
+}
